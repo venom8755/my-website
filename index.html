@@ -1,110 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohd Azeem | Portfolio</title>
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Font Awesome for Social Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Azeem | Digital Marketing Specialist & Web Developer</title>
+    <meta name="description" content="Portfolio of Mohd Azeem, Digital Marketing Specialist & Web Developer based in Dehradun. Specializing in SEO, Paid Ads, and Website Development.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Mohd Azeem | Digital Marketing & Web Developer">
+    <meta property="og:description" content="Expert in SEO, Ads, and Web Development. Driving digital growth for businesses.">
+    <meta property="og:type" content="website">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
-<header>
-  <h2>Azeem</h2>
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-  <nav id="nav">
-    <a href="#home" onclick="toggleMenu()">Home</a>
-    <a href="#skills" onclick="toggleMenu()">Skills</a>
-    <a href="#education" onclick="toggleMenu()">Education</a>
-    <a href="#experience" onclick="toggleMenu()">Experience</a>
-    <a href="#contact" onclick="toggleMenu()">Contact</a>
-  </nav>
-</header>
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Azeem<span>.</span></a>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Work</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
 
-<!-- ===== HERO ===== -->
-<section class="hero" id="home">
-  <div class="hero-text">
-    <h1>Hi, It's <span>Mohd Azeem</span></h1>
-    <h3>IT Support Engineer</h3>
-    <p>
-      Cyber Security learner and BSc IT student passionate about
-      networking, troubleshooting and system support.
-    </p>
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="hero-title">Mohd Azeem</h1>
+                <h2 class="hero-subtitle">Digital Marketing Specialist & Web Developer</h2>
+                <p class="hero-description">
+                    Bridging the gap between robust website development and data-driven marketing. I build high-performing websites and execute strategic campaigns to drive digital growth.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal">
+                <div class="img-glow"></div>
+                <div class="hero-image-container">
+                    <img src="myImage.jpeg" alt="Mohd Azeem" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <a href="#contact" class="btn">Hire Me</a>
+    <!-- About Section -->
+    <section id="about" class="about section bg-darker">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content grid-2">
+                <div class="about-text reveal">
+                    <p>
+                        I am a Digital Marketing Specialist and Web Developer based in Dehradun, Uttarakhand. I started my journey in IT support and hardware, earning <strong>CompTIA A+ and Network+</strong> certifications, along with a certification in <strong>Cyber Security</strong> while completing my BSc in IT. 
+                    </p>
+                    <p>
+                        This strong technical foundation gives me a unique edge: I don't just design websites—I understand how to build them securely, optimize their technical performance, and maintain best practices for infrastructure and SSL.
+                    </p>
+                    <p>
+                        Since pivoting to digital growth, I have successfully run campaigns for multiple businesses independently. I am comfortable leveraging modern AI tools in my workflow for research, coding assistance, and content creation, allowing me to deliver faster, high-quality results.
+                    </p>
+                    <div class="about-actions mt-3">
+                        <a href="#" class="btn btn-outline"><i class="fa-solid fa-download"></i> Download Resume</a>
+                    </div>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-box">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <h3>Performance-Driven</h3>
+                        <p>Focused on ROI, analytics, and measurable growth.</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Security-Minded</h3>
+                        <p>IT & Cyber Security background for robust web builds.</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <h3>AI-Empowered</h3>
+                        <p>Utilizing modern AI tools to accelerate workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- SOCIAL ICONS -->
-    <div class="social-icons">
-      <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="https://github.com/YOUR_USERNAME" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>What I Do</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="services-grid grid-3">
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="fa-solid fa-code"></i></div>
+                    <h3>Website Design & Dev</h3>
+                    <p>Building responsive, fast, and modern websites from scratch using HTML/CSS/JS or WordPress workflows.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3>SEO & Website Audits</h3>
+                    <p>Full technical, on-page, and off-page SEO audits to improve search rankings and drive organic traffic.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="fa-solid fa-ad"></i></div>
+                    <h3>Google & Meta Ads</h3>
+                    <p>Setting up, tracking, and optimizing paid ad campaigns on search and social platforms for maximum ROI.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="fa-solid fa-hashtag"></i></div>
+                    <h3>Social Media & Content</h3>
+                    <p>Managing social handles, creating engaging creatives, video reels, and writing optimized articles/blogs.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h3>Website Security</h3>
+                    <p>Applying IT basics to harden website security, manage SSLs, and ensure safe browsing experiences.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Leveraging GA4, Search Console, and GMB to build actionable monthly performance reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section bg-darker">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>My Skills</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-container grid-2">
+                <!-- Group 1 -->
+                <div class="skill-group reveal">
+                    <h3 class="skill-title"><i class="fa-solid fa-chart-pie text-primary"></i> SEO & Analytics</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Technical SEO</span>
+                        <span class="tag">On-Page SEO</span>
+                        <span class="tag">Local SEO / GMB</span>
+                        <span class="tag">Google Analytics (GA4)</span>
+                        <span class="tag">Search Console</span>
+                        <span class="tag">SEO Reporting</span>
+                    </div>
+                </div>
+                <!-- Group 2 -->
+                <div class="skill-group reveal">
+                    <h3 class="skill-title"><i class="fa-solid fa-bullhorn text-primary"></i> Paid Ads</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Google Ads</span>
+                        <span class="tag">Meta Ads (FB/IG)</span>
+                        <span class="tag">Campaign Tracking</span>
+                        <span class="tag">Performance Reporting</span>
+                    </div>
+                </div>
+                <!-- Group 3 -->
+                <div class="skill-group reveal">
+                    <h3 class="skill-title"><i class="fa-solid fa-laptop-code text-primary"></i> Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive Build</span>
+                        <span class="tag">Website Audits</span>
+                        <span class="tag">Security/Hardening</span>
+                    </div>
+                </div>
+                <!-- Group 4 -->
+                <div class="skill-group reveal">
+                    <h3 class="skill-title"><i class="fa-solid fa-pen-nib text-primary"></i> Content & Social</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Social Media Management</span>
+                        <span class="tag">Content Creation</span>
+                        <span class="tag">Reels & Video Ads</span>
+                        <span class="tag">Blog Writing</span>
+                        <span class="tag">Canva / Graphics</span>
+                    </div>
+                </div>
+                <!-- Group 5 -->
+                <div class="skill-group reveal full-width">
+                    <h3 class="skill-title"><i class="fa-solid fa-network-wired text-primary"></i> IT Foundation</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Technical support for hardware and networking</span>
+                        <span class="tag">System and connectivity troubleshooting</span>
+                        <span class="tag">IT infrastructure maintenance</span>
+                        <span class="tag">Hardware and software issue resolution</span>
+                        <span class="tag">System installation and configuration</span>
+                        <span class="tag">Basic network troubleshooting</span>
+                        <span class="tag">User technical support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="hero-img">
-    <img src="main.png" alt="">
-  </div>
-</section>
+    <!-- Experience & Education -->
+    <section id="experience" class="timeline-section section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Experience & Education</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="timeline">
+                <!-- Item 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Current</span>
+                        <h3>Independent Digital Marketing Specialist</h3>
+                        <h4>Freelance / Self-Employed</h4>
+                        <p>Handling digital growth for multiple businesses. Specializing in GMB optimization, GA4 tracking, monthly SEO performance reporting, Google/Meta Ads, and end-to-end web development.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026</span>
+                        <h3>Digital Marketing Internship</h3>
+                        <h4>Digital Folks Cooperation (DFC), Dehradun</h4>
+                        <p>Planned and executed social media campaigns, created ad creatives, managed Meta & Google Ads, performed SEO updates, GMB optimization, and competitor research.</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Completed</span>
+                        <h3>BSc Information Technology</h3>
+                        <h4>SGI College</h4>
+                        <p>Comprehensive study of information technology, software, and networking.</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Previous</span>
+                        <h3>IT Support Engineer (~1 year)</h3>
+                        <h4>GRD College</h4>
+                        <p>Foundational IT support role involving hardware troubleshooting, networking, and system maintenance.</p>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Certified</span>
+                        <h3>Cyber Security & CompTIA</h3>
+                        <h4>Professional Certifications</h4>
+                        <p>CompTIA Network+, CompTIA A+, and a dedicated Cyber Security certification.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ===== SKILLS ===== -->
-<section id="skills">
-  <h2 class="section-title">Skills</h2>
-  <div class="card">N+ (Networking)</div>
-  <div class="card">A+ (Hardware)</div>
-  <div class="card">IT Support & Troubleshooting</div>
-  <div class="card">Cyber Security Basics</div>
-</section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects section bg-darker">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Featured Work</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle mt-2">A selection of my recent website builds and digital marketing campaigns.</p>
+            </div>
+            
+            <!-- Dynamic Projects Grid (Populated by JS) -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- JS will inject cards here -->
+            </div>
+        </div>
+    </section>
 
-<!-- ===== EDUCATION ===== -->
-<section id="education">
-  <h2 class="section-title">Education</h2>
-  <div class="card">BSc IT – SGI College (Pursuing)</div>
-  <div class="card">Cyber Security Certification – 2020–2022</div>
-  <div class="card">Intermediate – DAV Inter College (2020)</div>
-  <div class="card">High School – Sneha Doon Academy (2018)</div>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Let's Talk</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="contact-container grid-2">
+                <div class="contact-info reveal">
+                    <h3>Get In Touch</h3>
+                    <p>Interested in working together? Drop me a message to discuss your next digital project, SEO needs, or ad campaigns.</p>
+                    
+                    <div class="info-items mt-3">
+                        <div class="info-item">
+                            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Dehradun / Haridwar, Uttarakhand</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>azeemlabs.work@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 8755432212</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form reveal">
+                    <form action="#" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="How can I help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ===== EXPERIENCE ===== -->
-<section id="experience">
-  <h2 class="section-title">Experience</h2>
-  <div class="card">
-    1 Year Experience as IT Support Engineer – GRD College
-  </div>
-</section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                Azeem<span>.</span>
+            </div>
+            <p>&copy; <span id="currentYear"></span> Mohd Azeem. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
 
-<!-- ===== CONTACT ===== -->
-<section id="contact">
-  <h2 class="section-title">Contact</h2>
-  <div class="card">
-    <p>📞 +91 8755432212</p>
-    <p>✉️ mdazeemddun87@gmail.com</p>
-    <p>📍 Dehradun, Uttarakhand</p>
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer>
-  © 2026 Mohd Azeem | Portfolio
-</footer>
-
-<script>
-  function toggleMenu(){
-    document.getElementById("nav").classList.toggle("active");
-  }
-</script>
-
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 </html>
-
